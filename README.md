@@ -140,6 +140,22 @@ I've recently been working on [merry](https://github.com/yoshuawuyts/merry/)
 which uses streams, fast logging and has loads of conventions. It's all of my
 opinions around API design turned to code.
 
+## Static typing
+It's generally a good idea to validate assumptions you make. This helps catch
+mistakes early and makes fixing them easier later on. I like using Node's
+built-in `assert()` package for this. Got an input type you want to validate?
+Assert it. Expect certain config values to exist? Assert it. Because I use it
+in all my packages, having an extra compile check for static types doesn't make
+sense for me. When deploying production code
+[unassertify](https://github.com/unassert-js/unassertify) removes the extra
+checks.
+
+When building APIs [json-schema](https://github.com/mafintosh/is-my-json-valid)
+is a great way to validate assumptions made about incoming JSON. When building
+custom wire protocols
+[protocol-buffers](https://github.com/mafintosh/protocol-buffers) and similar
+are great.
+
 ## Frontend
 I've recently been working on [choo](https://choo.io)
 which uses pure HTML, JS and has a clean architecture. It's all of my
@@ -174,6 +190,9 @@ Yup, and that's it. These are my boring tools for writing software. Obviously
 there's much more tools to be discovered, but npm should be your friend. I hope
 this little guide can at least help you out a little when getting started in
 the wonderous world of Node.
+
+_PS._ The fancy name for the tech described in this guide is [The Lebron
+Stack](http://lebron.technology/). We don't kid. Happy coding!
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
