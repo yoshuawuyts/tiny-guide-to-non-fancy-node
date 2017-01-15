@@ -1,4 +1,4 @@
-# the-tiny-guide-to-non-fancy-node
+# Tiny Guide to Non Fancy Node
 A tiny guide to non fancy, high-value Node.js things. Because we're folks that
 want to build fun things, rather than spending time fighting our tools.
 
