@@ -75,7 +75,9 @@ needing to run an array of things, in series, parallel or something in between.
 If you ever need composable `async` in Node, consider using streams. The
 `streams2` API isn't pretty, but it's worth learning. Streams can be passed
 around synchronously and will send data from one place to another. They're
-ideal for creating composable, reusable APIs.
+ideal for creating composable, reusable APIs. Check out
+[mississippi](https://github.com/maxogden/mississippi) on GitHub to learn more
+about good streams packages.
 
 ## Testing
 The [Test Anything Protocol (TAP)](https://testanything.org/) has existed for years, and works in almost
