@@ -78,7 +78,7 @@ around synchronously and will send data from one place to another. They're
 ideal for creating composable, reusable APIs.
 
 ## Testing
-The [Test Anything Protocol (TAP)]() has existed for years, and works in almost
+The [Test Anything Protocol (TAP)](https://testanything.org/) has existed for years, and works in almost
 every language. [tape](https://github.com/substack/tape) is the way to use it
 in Node. Don't worry about fancy (Promise based) parallel test runners; if they
 provide any measurable performance improvement then your code is probably too
